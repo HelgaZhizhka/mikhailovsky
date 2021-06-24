@@ -1,0 +1,70 @@
+:root {
+	--table-bg-color: var(--color-white);
+	--table-border-color: var(--component-border-color);
+	--table-border-width: var(--component-border-width);
+	--table-header-bg-color: transparent;
+	--table-spacing-x: .75rem;
+	--table-spacing-y: .5rem;
+	--table-hover-color: var(--color-white);
+	--table-hover-bg-color: var(--state-primary);
+	--table-stripe-bg-color: var(--component-bg-color);
+}
+
+table {
+	width: 100%;
+}
+
+.table {
+	background-color: var(--table-bg-color);
+	border-collapse: collapse;
+	margin-bottom: 1.5rem;
+	border-collapse: collapse;
+	& caption {
+		caption-side: bottom;
+		font-size: var(--font-size-small);
+		color: var(--color-muted);
+		text-align: center;
+		padding-top: var(--table-spacing-y);
+	}
+	& th {
+		text-align: left;
+		background-color: var(--table-header-bg-color);
+		border-bottom: solid calc(var(--table-border-width) * 2) var(--table-border-color);
+		padding: var(--table-spacing-y) var(--table-spacing-x);
+	}
+
+	& td {
+		border-bottom: solid var(--table-border-width) var(--table-border-color);
+		padding: var(--table-spacing-y) var(--table-spacing-x);
+	}
+
+	/* Variations */
+	&_bordered {
+		border: solid var(--table-border-width) var(--table-border-color);
+
+		& td {
+			border-style: solid;
+			border-width: var(--table-border-width);
+			border-color: var(--table-border-color);
+		}
+	}
+
+	&_hover {
+		& tbody tr:hover td {
+			color: var(--table-hover-color);
+			background-color: var(--table-hover-bg-color);
+		}
+	}
+
+	&_striped {
+		& tr:nth-child(odd) td {
+			background-color: var(--table-stripe-bg-color);
+		}
+	}
+
+	&_no-bordered {
+		&, td {
+			border: none;
+		}
+	}
+}

@@ -1,0 +1,6 @@
+:root {
+	--navbar-height: 80px;
+	--navbar-bg: var(--grey-light);
+	--navbar-border-width: 4px;
+	--navbar-box-shadow: 0 1px 0 #e2e2e2, inset 0 -1px 0 #e8e8e8;
+}

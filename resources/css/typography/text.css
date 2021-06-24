@@ -1,0 +1,110 @@
+/* Content styles */
+p, pre {
+	margin-top: 0;
+	margin-bottom: 1rem;
+}
+abbr[title] {
+	text-decoration: none;
+	border-bottom: dashed 2px currentcolor;
+}
+mark, .mark {
+	color: var(--mark-color);
+	background-color: var(--mark-bg-color);
+	padding: var(--mark-padding-y) var(--mark-padding-x);
+}
+dfn {
+	font-style: italic;
+}
+small {
+	font-size: var(--font-size-small);
+}
+sub,
+sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+sub {
+	bottom: -0.25em;
+}
+sup {
+	top: -0.5em;
+}
+b,
+strong, .strong {
+	font-weight: var(--font-weight-bold);
+}
+i, em {
+	font-style: italic;
+}
+ins {
+	color: var(--color-green);
+}
+kbd {
+	font-family: var(--font-monospace);
+	font-size: var(--kbd-font-size);
+	color: var(--kbd-color);
+	background-color: var(--kbd-bg-color);
+	border-radius: var(--kbd-border-radius);
+	padding: var(--kbd-padding-y) var(--kbd-padding-x);
+}
+hr {
+	-webkit-box-sizing: content-box;
+	box-sizing: content-box;
+	height: 0;
+	overflow: visible;
+	border: none;
+	clear: both;
+	border-top: solid var(--hr-border-width) var(--hr-border-color);
+	margin: var(--hr-margin-y) var(--hr-margin-x);
+}
+pre {
+	font-size: 1em;
+	max-height: var(--pre-max-height);
+	overflow-y: auto;
+	font-family: var(--font-monospace);
+	color: var(--pre-color);
+	background-color: var(--pre-bg-color);
+	border-radius: var(--pre-border-radius);
+	padding: 1rem;
+	margin-top: 0;
+	margin-bottom: 1.5rem;
+}
+::placeholder {
+	color: var(--placeholder-color);
+}
+::selection {
+	background-color: var(--selection-bg-color);
+	color: var(--selection-color);
+	text-shadow: none !important;
+}
+.capitalize {
+	text-transform: capitalize;
+}
+.strikethrough {
+	color: var(--color-muted);
+	text-decoration: line-through;
+}
+/*custom scrollbar*/
+body::-webkit-scrollbar {
+	width: 5px;
+}
+
+body::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+	background-color: var(--grey-dark);
+	outline: 1px solid var(--grey);
+}
+
+.title, .subtitle {
+	word-break: break-word;
+}
+
+.title:not(:last-child),
+.subtitle:not(:last-child) {
+	margin-bottom: 1.5rem;
+}

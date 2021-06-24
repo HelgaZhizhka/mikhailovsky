@@ -1,0 +1,40 @@
+{
+    "private": true,
+    "scripts": {
+        "dev": "npm run development",
+        "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "watch": "npm run development -- --watch",
+        "watch-poll": "npm run watch -- --watch-poll",
+        "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --disable-host-check --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "prod": "npm run production",
+        "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --config=node_modules/laravel-mix/setup/webpack.config.js"
+    },
+    "devDependencies": {
+        "axios": "0.19",
+        "lodash": "4.17.13",
+        "cross-env": "7.0",
+        "css-mqpacker": "7.0.0",
+        "laravel-mix": "5.0.4",
+        "laravel-mix-postcss-config": "1.4.0",
+        "perfectionist": "2.4.0",
+        "postcss-apply": "0.12.0",
+        "postcss-cssnext": "3.1.0",
+        "postcss-extend": "1.0.5",
+        "postcss-nested": "4.2.3",
+        "postcss-partial-import": "4.1.0",
+        "postcss-reporter": "6.0.1",
+        "postcss-short": "5.0.0",
+        "postcss-sprites": "4.2.1",
+        "resolve-url-loader": "2.3.2",
+        "sass": "1.32.5",
+        "sass-loader": "8.0.2",
+        "vue": "2.6.12",
+        "vue-template-compiler": "2.6.12",
+        "workbox-webpack-plugin": "6.0.2"
+    },
+    "dependencies": {
+        "save-dev": "0.0.1-security",
+        "vue-mq": "1.0.1",
+        "vue-router": "3.5.1"
+    }
+}

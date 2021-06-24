@@ -1,0 +1,82 @@
+:root {
+	--color-white: #fff;
+    --color-black: #000;
+	--color-blue: #0074d9;
+    --color-yellow: #ffb609;
+    --color-red: #ff4136;
+    --color-green: #2ecc40;
+    --base-pink: #F44A9C;
+    --base-gold: #BE9E56;
+    --base-silver: #89899C;
+    --base-blue: #707EFD;
+    --base-darkblue: #8962F8;
+    --base-teal: #09D0DD;
+    --base-green: #00D3B9;
+    --base-orange: #F4714D;
+    --base-red: #DD3960;
+
+	--grey-darker:  hsl(0, 0%, 21%);
+	--grey-dark: hsl(0, 0%, 29%);
+	--grey: hsl(0, 0%, 48%);
+	--grey-light:   hsl(0, 0%, 71%);
+	--grey-lighter: hsl(0, 0%, 86%);
+
+	--state-primary: var(--base-pink);
+	--state-secondary: var(--base-gold);
+	--state-success: #23d160;
+	--state-info: #209cee;
+	--state-warning: #FF8754;
+	--state-danger: #ff3860;
+	--state-light: var(--color-white);
+	--state-dark: var(--color-black);
+
+	--body-bg-color: #F6F6F6;
+	--color-text:  #1A1A1A;
+	--color-muted: var(--grey);
+	--border-radius: 3px;
+	--base-unit: 1.5rem;
+
+	--component-bg-color: #f2f2f2;
+	--component-border-color: #dbdbdb;
+	--component-border-radius: var(--border-radius);
+	--component-border-width: 1px;
+	--component-focus-width: 2px;
+	--component-padding-x: var(--base-unit);
+	--component-padding-y: var(--base-unit);
+	--component-speed: .25s;
+	--component-box-shadow-inner: inset 0 1px 1px rgba(0, 0, 0, .05);
+	--component-box-shadow-outer: 0 1px 0 rgba(0, 0, 0, .05);
+	--component-box-shadow-box: 0 2px 3px rgba(10,10,10,.1), 0 0 0 1px rgba(10,10,10,.1);
+	--spacing-xs: .5rem;
+	--spacing-sm: 1rem;
+	--spacing-md: 1.5rem;
+	--spacing-lg: 2rem;
+	--spacing-xl: 2.5rem;
+	--z-index-nav: 1000;
+	--z-index-popover: 999;
+
+	--centered: {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+	};
+	--clearfix: {
+		&:before,
+		&:after {
+			content: '';
+			display: table;
+		}
+		&:after {
+			clear: both;
+		}
+	};
+	--text-overflow: {
+		overflow: hidden;
+		text-overflow: ellipsis;
+		display: -webkit-box;
+		-webkit-box-orient: vertical;
+	}
+}
+

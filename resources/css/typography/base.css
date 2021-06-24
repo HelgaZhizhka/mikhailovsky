@@ -1,0 +1,135 @@
+/*   Typography */
+:root {
+	--base-font-weight: normal;
+	--base-font-style: normal;
+	--font-size: 1rem;
+	--font-size-small: 80%;
+	--font-weight-thin: 100;
+	--font-weight-light: 300;
+	--font-weight: 400;
+	--font-weight-medium: 500;
+	--font-weight-bold: 700;
+	--line-height: 1.5;
+
+	--font-family: var(--font-family-base);
+	--font-family-base: 'Roboto', sans-serif;
+	--font-family-head: 'Roboto', sans-serif;
+	--font-sans-serif: sans-serif;
+	--font-serif: serif;
+	--font-system: system-ui;
+	--font-monospace: Menlo, Consolas, "DejaVu Sans Mono", monospace;
+
+	--code-font-size: 90%;
+	--code-color: var(--color-black);
+	--code-border-radius: var(--border-radius);
+	--code-bg-color: var(--component-bg-color);
+	--code-padding-x: calc(var(--font-size) * .4);
+	--code-padding-y: calc(var(--font-size) * .2);
+
+	--hr-border-width: 1px;
+	--hr-border-color: var(--component-border-color);
+	--hr-margin-x: 0;
+	--hr-margin-y: 2rem;
+
+	--kbd-font-size: 90%;
+	--kbd-color: var(--color-white);
+	--kbd-border-radius: var(--border-radius);
+	--kbd-bg-color: var(--color-black);
+	--kbd-padding-x: calc(var(--font-size) * .4);
+	--kbd-padding-y: calc(var(--font-size) * .2);
+
+	--mark-color: inherit;
+	--mark-bg-color: var(--color-yellow);
+	--mark-padding-x: calc(var(--font-size) * .4);
+	--mark-padding-y: calc(var(--font-size) * .2);
+
+	--pre-color: var(--code-color);
+	--pre-border-radius: var(--component-border-radius);
+	--pre-bg-color: var(--code-bg-color);
+	--pre-max-height: none;
+
+	--selection-color: var(--color-white);
+	--selection-bg-color: var(--color-text);
+
+}
+
+html {
+	line-height: 1.15;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	color: var(--color-text);
+	-webkit-overflow-scrolling: touch;
+    -webkit-touch-callout: none;
+}
+body {
+	margin: 0;
+	font-size: var(--font-size);
+	font-family: var(--font-family);
+	line-height: var(--line-height);
+	background-color: var(--body-bg-color);
+	color: var(--color-text);
+	-webkit-font-smoothing: antialiased;
+	moz-osx-font-smoothing: grayscale;
+	text-rendering: optimizeLegibility;
+    -webkit-text-size-adjust: none;
+}
+body * {
+	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+	-webkit-focus-ring-color: rgba(255, 255, 255, 0);
+	outline: none;
+
+}
+img, a {
+    -webkit-touch-callout: none;
+    user-select: none
+}
+article,
+aside,
+footer,
+header,
+nav,
+section {
+	display: block;
+}
+figcaption,
+figure,
+main {
+	display: block;
+}
+figure {
+	margin-top: 0;
+	margin-bottom: 1.5rem;
+}
+img {
+	border-style: none;
+	height: auto;
+	max-width: 100%;
+	vertical-align: middle;
+}
+audio,
+video {
+	display: inline-block;
+}
+audio:not([controls]) {
+	display: none;
+	height: 0;
+}
+svg:not(:root) {
+	overflow: hidden;
+}
+details,
+menu {
+	display: block;
+}
+summary {
+	display: list-item;
+}
+canvas {
+	display: inline-block;
+}
+template {
+	display: none;
+}
+[hidden] {
+	display: none;
+}

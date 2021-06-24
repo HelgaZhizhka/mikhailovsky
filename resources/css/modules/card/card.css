@@ -1,0 +1,5 @@
+:root {
+	--color-card: var(--color-text);
+	--card-bg: #fff;
+	--card-footer-border: 1px solid var(--color-text)
+}

@@ -1,0 +1,386 @@
+:root {
+	--input-height-xs: 30px;
+	--input-height-sm: 40px;
+	--input-height: 50px;
+	--input-height-lg: 72px;
+	--input-height-xl: 100px;
+	--input-font-size-xs: .625rem;
+	--input-font-size-sm: .875rem;
+	--input-font-size: 1rem;
+	--input-font-size-lg: 1.875rem;
+	--input-font-size-xl: 2rem;
+	--input-font-family: inherit;
+	--input-font-weight: inherit;
+	--input-color: var(--color-text);
+	--input-border-color: var(--component-border-color);
+	--input-border-width: 1px;
+	--input-border-radius: var(--component-border-radius);
+	--input-bg-color: var(--color-white);
+	--input-box-shadow: var(--component-box-shadow-inner);
+	--input-readonly-bg-color: var(--component-bg-color);
+	--input-focus-color: rgb(192, 192, 192);
+	--input-speed: var(--component-speed);
+
+	--input-addon-bg-color: var(--component-bg-color);
+	--input-addon-color: var(--color-muted);
+
+	--input-icon-width: 2em;
+	--input-icon-offset: .5em;
+	--input-icon-color: var(--state-secondary);
+
+	--input-range-track-height: .5rem;
+	--input-range-track-color: var(--component-bg-color);
+	--input-range-track-box-shadow: var(--component-box-shadow-inner);
+	--input-range-thumb-height: 1.25rem;
+	--input-range-thumb-color: var(--state-primary);
+
+	--input-invalid-color: var(--state-danger);
+	--input-invalid-border-color: var(--state-danger);
+	--input-valid-color: var(--state-success);
+	--input-valid-border-color: var(--state-success);
+
+	--select-background-image:url(../images/svgs/arrow-select.svg);
+
+	--fieldset-border-color: var(--component-border-color);
+	--fieldset-border-width: var(--component-border-width);
+	--fieldset-border-radius: var(--border-radius);
+	--fieldset-padding-x: 2rem;
+	--fieldset-padding-y: 1.5rem;
+
+	--label-color: inherit;
+
+	--placeholder-color: #7A7A7A;
+	--shake-distance: 6px;
+}
+
+/*  Forms initial styles */
+button,
+input,
+optgroup,
+select,
+textarea {
+	font-family: sans-serif;
+	font-size: 100%;
+	line-height: 1.15;
+	margin: 0;
+}
+button,
+input {
+	overflow: visible;
+}
+button,
+select {
+	text-transform: none;
+}
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+	-webkit-appearance: button;
+}
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+	border-style: none;
+	padding: 0;
+}
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+	outline: 1px dotted ButtonText;
+}
+button, input[type="submit"] {
+	cursor: pointer;
+}
+legend {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	color: inherit;
+	display: table;
+	max-width: 100%;
+	padding: 0;
+	white-space: normal;
+}
+fieldset {
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+fieldset legend {
+	font-weight: 500;
+	padding: 0 10px;
+}
+progress {
+	display: inline-block;
+	vertical-align: baseline;
+}
+textarea {
+	overflow: auto;
+}
+label + label {
+	margin-left: 5px;
+}
+[type="checkbox"],
+[type="radio"] {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 0;
+}
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+	height: auto;
+}
+[type="search"] {
+	-ms-appearance: textfield;
+	appearance: none;
+	outline-offset: -2px;
+}
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+	-webkit-appearance: none;
+}
+::-webkit-file-upload-button {
+	-webkit-appearance: button;
+	font: inherit;
+}
+input[type=range] {
+    appearance: none;
+}
+input[type=range]:focus {
+    outline: none;
+}
+input[type=range]::-webkit-slider-runnable-track,
+input[type=range]::-webkit-slider-thumb,
+input[type=range]::-moz-range-track,
+input[type=range]::-moz-range-thumb,
+input[type=range]::-ms-track,
+input[type=range]::-ms-thumb {
+    cursor: pointer;
+}
+/*  Forms base styles */
+
+input,
+select,
+textarea {
+	display: inline-block;
+	margin: 0;
+    padding: 0;
+	font-family: var(--input-font-family);
+	font-size: var(--input-font-size);
+	font-weight: var(--input-font-weight);
+	color: var(--input-color);
+	vertical-align: middle;
+	box-shadow:	none;
+    background: none;
+    line-height: 1;
+	transition: all .3s ease-out;
+	white-space: nowrap;
+	&:focus {
+		outline: none;
+		&:not([readonly]) {
+			border-color: var(--input-focus-color);
+		}
+	}
+
+	&[disabled] {
+		opacity: .5;
+		cursor: not-allowed;
+	}
+
+	&[readonly] {
+		background-color: var(--input-readonly-bg-color);
+	}
+
+	&[type="color"] {
+		padding: .5rem;
+
+		&::-webkit-color-swatch-wrapper {
+			padding: 0;
+		}
+
+		&::-webkit-color-swatch {
+			border: none;
+			border-radius: var(--input-border-radius);
+		}
+	}
+}
+input, textarea {
+	&:focus {
+		&::placeholder {
+			opacity: 0;
+		}
+	}
+}
+select {
+	position: relative;
+	height: var(--input-height);
+	line-height: var(--input-height);
+	background-color: var(--input-bg-color);
+	background-image: var(--select-background-image);
+	background-position: right .4rem center;
+	background-repeat: no-repeat;
+	background-size: 16px 8px;
+	border: var(--input-border-width) solid var(--input-border-color);
+	padding-top: 0;
+	padding-bottom: 0;
+	padding-right: 1.5rem;
+	padding-left: .5rem;
+	border-radius: var(--input-border-radius);
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	&[multiple] {
+		height: auto;
+		padding-right: 0;
+	}
+}
+select:required:invalid {
+	color: var(--placeholder-color);
+}
+option[value=""][disabled] {
+	display: none;
+}
+option {
+	color: var(--color-text);
+}
+textarea {
+	height: auto;
+	vertical-align: top;
+	resize: vertical;
+	line-height: var(--line-height);
+	white-space: normal;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+	vertical-align: 1px;
+}
+
+/* delete arrow input type number */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+	appearance: none;
+	margin: 0;
+}
+input[type="number"] {
+	-moz-appearance: textfield;
+	font-weight: normal;
+}
+/* hide cross in search input ie */
+input[type=search]::-ms-clear {
+	size: 0;
+}
+input[type="date"]::-webkit-inner-spin-button {
+    display: none;
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+    /*position: absolute;
+    right: 30px;
+    bottom: 8px*/
+}
+/*input[type="date"]::-webkit-calendar-picker-indicator:focus {
+   outline: 0;
+}*/
+.label {
+	color: var(--label-color);
+	display: inline-block;
+	margin-bottom: .25rem;
+
+	& + label {
+		margin-left: 1rem;
+	}
+}
+
+.form {
+	&__row {
+		position: relative;
+		margin-bottom: 1rem;
+		&:last-child, &:last-of-type {
+			margin-bottom: 0;
+		}
+	}
+	&_horizontal {
+		input,
+		select,
+		textarea {
+			display: block;
+			width: 100%;
+		}
+	}
+    .ui-input,
+    .ui-textarea,
+    input,
+    textarea,
+    label,
+    .ui-input + .label,
+    .ui-checkbox + .label,
+    .link {
+        font-family: 'Montserrat', sans-serif;
+    }
+    &_login {
+        .form__row.is-fill > label {
+            background: #f6f6f6;
+        }
+    }
+}
+/* Validation */
+.is-invalid {
+	input, textarea, select,
+    &.ui-input, &.ui-textarea, &.select {
+		border-color: var(--input-invalid-border-color);
+		color: var(--input-invalid-color)!important;
+        &::placeholder {
+            color: var(--input-invalid-color)!important;
+        }
+	}
+    input.is-bordered, .ui-input.is-bordered {
+        border-bottom-color: var(--input-invalid-border-color);
+        &:focus ~ .border {
+            background: var(--input-invalid-border-color);
+        }
+
+    }
+}
+
+.is-valid {
+    input, textarea, select  {
+        border-color: var(--input-valid-border-color);
+        color: var(--input-valid-color) !important;
+        &::placeholder {
+            color: var(--input-valid-color) !important;
+        }
+    }
+    input.is-bordered, .ui-input.is-bordered {
+        border-bottom-color: var(--input-valid-border-color);
+        &:focus ~ .border {
+            background: var(--input-valid-border-color);
+        }
+
+    }
+}
+.is-warning {
+    input, textarea, select {
+        border-color: var(--state-secondary);
+        color: var(--state-secondary)!important;
+        &::placeholder {
+            color: var(--state-secondary)!important;
+        }
+    }
+    input.is-bordered, .ui-input.is-bordered {
+        border-bottom-color: var(--state-secondary);
+        &:focus ~ .border {
+            background: var(--state-secondary);
+        }
+
+    }
+}
+.is-error {
+    color: var(--input-invalid-color) !important;
+}
+@media only screen and (min-width : 2560px) {
+    select {
+        background-size: 26px 18px;
+    }
+}

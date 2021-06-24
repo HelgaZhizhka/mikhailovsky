@@ -1,0 +1,28 @@
+:root {
+	--link-color: var(--state-primary);
+	--link-text-decoration: none;
+	--link-color-hover: color(var(--link-color) b(+10%));
+	--link-text-decoration-hover: none;
+}
+a {
+	background-color: transparent;
+	-webkit-text-decoration-skip: objects;
+	color: var(--link-color);
+	text-decoration: var(--link-text-decoration);
+	&:hover {
+		color: var(--link-color-hover);
+	}
+}
+.link {
+	transition: var(--button-speed) all ease-out;
+	cursor: pointer;
+}
+.link_dotted {
+	border-bottom: 1px dotted var(--link-color);
+	cursor: pointer;
+	&:hover, &:active {
+		text-decoration: none;
+		color: var(--link-color-hover);
+		border-bottom-color: transparent;
+	}
+}

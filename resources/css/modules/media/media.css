@@ -1,0 +1,10 @@
+.media {
+    display: flex;
+    align-items: flex-start;
+    img {
+        margin-right: 1rem;
+    }
+    &__body {
+        flex: 1
+    }
+}

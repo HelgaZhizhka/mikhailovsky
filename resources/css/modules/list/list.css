@@ -1,0 +1,63 @@
+:root {
+	--list-postfix: ",";
+	--list-prefix: "-";
+    --list-check: '✓';
+	--list-unstyled: {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+}
+/* initial list styles */
+dl {
+	margin-bottom: 1.5rem;
+}
+
+dt {
+	font-weight: var(--font-weight-bold);
+}
+
+dd {
+	margin-left: 0;
+	margin-bottom: 1.5rem;
+}
+
+ol,
+ul {
+	line-height: var(--line-height);
+	margin-top: 0;
+	margin-bottom: 1.5rem;
+
+	& ol,
+	& ul {
+		margin-bottom: 0;
+	}
+}
+
+.list {
+	@apply --list-unstyled;
+}
+.list_prefix, .list_postfix {
+	padding-left: 1rem;
+}
+.list_prefix {
+	list-style: none;
+	& > li::before {
+		content: var(--list-prefix);
+		margin-right: 5px;
+		color: var(--color-text);
+	}
+}
+.list_postfix {
+	list-style: none;
+	& > li {
+		&::after {
+			content: var(--list-postfix);
+		}
+	}
+}
+.list_inline {
+	li {
+		display: inline;
+	}
+}
