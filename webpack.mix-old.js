@@ -11,8 +11,10 @@ require('laravel-mix-postcss-config');
  |
  */
 
+// mix.js('resources/js/app.js', 'public/js')
+//     .sass('resources/sass/app.scss', 'public/css');
+
 mix.js('resources/js/app.js', 'public/js')
-    .sass('resources/sass/app.scss', 'public/css')
     .postCss('resources/css/app.css', 'public/assets/css')
     .postCssConfig()
     .options({
@@ -45,7 +47,7 @@ if (mix.inProduction()) {
             }
         }
     })
-    mix.version(['public/js/app.js', 'public/css/app.css', 'public/assets/css/app.css'])
+    mix.version(['public/js/app.js', 'public/assets/css/app.css'])
 } else if(!mix.inProduction()) {
     mix.sourceMaps();
     mix.webpackConfig({ devtool: 'inline-source-map'})
