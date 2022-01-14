@@ -10,12 +10,11 @@
         "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --config=node_modules/laravel-mix/setup/webpack.config.js"
     },
     "devDependencies": {
-        "axios": "0.19",
+        "axios": "0.21.2",
         "cross-env": "7.0",
         "css-mqpacker": "7.0.0",
         "laravel-mix": "5.0.4",
         "laravel-mix-postcss-config": "1.4.0",
-        "lodash": "4.17.13",
         "perfectionist": "2.4.0",
         "postcss-apply": "0.12.0",
         "postcss-cssnext": "3.1.0",
