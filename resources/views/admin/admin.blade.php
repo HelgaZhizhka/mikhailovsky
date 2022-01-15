@@ -1,7 +1,7 @@
-@extends('layouts.app')
+@extends('layouts.admin')
 
 @section('content')
-<div class="container">
-    <h1>Admin panel</h1>
-</div>
+    <div id="admin">
+        <router-view></router-view>
+    </div>
 @endsection

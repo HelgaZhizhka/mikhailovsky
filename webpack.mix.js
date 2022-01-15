@@ -12,7 +12,9 @@ require('laravel-mix-postcss-config');
  */
 
 mix.js('resources/js/app.js', 'public/js')
+mix.js('resources/js/admin.js', 'public/js')
     .postCss('resources/css/app.css', 'public/assets/css')
+    .postCss('resources/css/styles.css', 'public/assets/css')
     .postCssConfig()
     .options({
         processCssUrls: false,

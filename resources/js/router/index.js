@@ -1,17 +1,25 @@
 import VueRouter from "vue-router"
-import Home from "../components/Main";
+import Landing from "../components/Landing";
 import About from "../components/About";
+import Dashboard from "../admin/Dashboard";
+
 
 const routes = [
     {
         path: '/',
-        component: Home,
-        name: "home"
+        component: Landing,
+        name: "landing"
     },
     {
         path: '/about',
         component: About,
         name: "about"
+    },
+
+    {
+        path: '/admin',
+        component: Dashboard,
+        name: "dashboard"
     },
 ]
 

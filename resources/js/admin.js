@@ -4,6 +4,7 @@ import VueRouter from "vue-router"
 import router from "./router"
 import VueMq from 'vue-mq';
 
+
 Vue
     .use(VueRouter)
     .use(VueMq, {
@@ -14,10 +15,10 @@ Vue
         }
     })
 
-const app = new Vue({
-    el: '#app',
+const admin = new Vue({
+    el: '#admin',
     router,
     created(){
-        console.log('created from app.js')
-    }
+        console.log('created from admin.js')
+    },
 })
