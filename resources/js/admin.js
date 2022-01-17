@@ -3,8 +3,8 @@ import Vue from 'vue'
 import VueRouter from "vue-router"
 import router from "./router"
 import VueMq from 'vue-mq';
-
-
+import AdminHeader from "./admin/AdminHeader";
+import SideBar from "./admin/SideBar";
 Vue
     .use(VueRouter)
     .use(VueMq, {
@@ -18,6 +18,17 @@ Vue
 const admin = new Vue({
     el: '#admin',
     router,
+
+    components: {
+        AdminHeader, SideBar
+    },
+
+    data: function () {
+        return {
+
+        }
+    },
+
     created(){
         console.log('created from admin.js')
     },

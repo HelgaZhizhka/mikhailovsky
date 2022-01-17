@@ -14,18 +14,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('landing');
-});
+Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/', 'MainController@index')->name('main');
 
 Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
 
 //admin routes
 Route::group(['prefix'=>'admin', 'middleware'=>['auth']], function (){
     Route::get('/', 'Admin\AdminController@index');
-    Route::get('/articles', 'Admin\AdminController@index');
-    Route::get('/article/{id}', 'Admin\AdminController@index');
+    Route::get('/{link}', 'Admin\AdminController@index')->where('link', ('first|second'));
 
 });

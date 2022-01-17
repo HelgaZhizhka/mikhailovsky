@@ -17,6 +17,12 @@ Vue
 const app = new Vue({
     el: '#app',
     router,
+
+    data: function () {
+        return {
+
+        }
+    },
     created(){
         console.log('created from app.js')
     }

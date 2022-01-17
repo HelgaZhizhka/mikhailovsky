@@ -1,12 +1,17 @@
 <template>
-    <div class="container">
-        <h1 class="heading">Admin panel</h1>
+    <div>
+        <div class="container-fluid main-content">
+            Admin panel
+        </div>
     </div>
 </template>
 
 <script>
 export default {
-    name: "Dashboard"
+    name: "Dashboard",
+    created() {
+        console.log('created from Dashboard.vue')
+    }
 }
 </script>
 

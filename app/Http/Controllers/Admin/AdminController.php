@@ -15,6 +15,6 @@ class AdminController extends Controller
     //
     public function index()
     {
-        return view('admin.admin');
+        return view('admin.admin')->with(['url'=>config('app.url')]);
     }
 }
