@@ -1,6 +1,6 @@
 <template>
     <div class="container">
-        <h1>Admin panel</h1>
+        <h1 class="heading">Admin panel</h1>
     </div>
 </template>
 
