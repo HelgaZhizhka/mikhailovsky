@@ -1,0 +1,246 @@
+@media (max-width: 1899px) {
+    body {
+        font-size: .75rem;
+    }
+    .flag {
+        width: 1rem;
+        height: .6rem;
+    }
+    .btn {
+        font-size: .75rem;
+    }
+    .dropdown-menu {
+        font-size: .75rem;
+    }
+    .drop-heading {
+        padding: .5rem;
+    }
+    .dropdown-item {
+        padding: 0.5rem;
+    }
+    .dropdown-menu-arrow::before {
+        right: 5px;
+        top: -8px;
+    }
+    .badge {
+        width: 1rem;
+        height: 1rem;
+        font-size: .75rem;
+        line-height: 1rem;
+    }
+    .notifyimg {
+        width: 20px;
+        height: 20px;
+        line-height: 20px;
+    }
+    .header .header-brand {
+        width: 180px;
+    }
+    .nav-link-icon {
+        margin: 2px;
+        width: 1.5rem;
+        height: 1.5rem;
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+    .icon-email {
+        width: 20px;
+        height: 20px;
+    }
+    .header .nav-link .badge {
+        top: -5px;
+        left: 16px;
+    }
+    .header .nav-link .avatar {
+        width: 1.5rem;
+        height: 1.5rem;
+        line-height: 1.5rem;
+    }
+    .content-area {
+        padding-top: 10px;
+    }
+    .sidebar, .card-main {
+        min-height: calc(100vh - 80px);
+        max-height: calc(100vh - 80px);
+    }
+    .tabs-menu-body .sidebar-body {
+        max-height: calc(100vh - 180px);
+    }
+    .sidebar .tabs-menu .tab-link {
+        height: 30px;
+        padding: 0 1rem;
+        font-size: .75rem;
+        line-height: 28px;
+    }
+    .search input {
+        height: 30px;
+        padding-right: 30px;
+        font-size: .75rem;
+    }
+    .search-btn {
+        width: 30px;
+        line-height: 30px;
+        font-size: 1rem
+    }
+    .status {
+        width: 1rem;
+        height: 1rem;
+    }
+    .contacts .user-info .name {
+        font-size: 1rem;
+    }
+    .contacts .btn-message > i {
+        font-size: 1.5rem;
+    }
+    .contacts .avatar-wrap, .card-main .avatar-wrap {
+        flex: 0 0 4rem;
+    }
+    .contacts .avatar {
+        width: 4rem;
+        height: 4rem;
+        line-height: 4rem;
+        font-size: 1.5rem;
+    }
+    .avatar-wrap .is-favorite, .btn-add-to-contact {
+        width: 20px;
+        height: 20px;
+        line-height: 19px;
+        font-size: 1rem;
+    }
+    .contacts .is-favorite {
+        bottom: -2px;
+        right: 0;
+    }
+    .card-main .card-header .user-info .name {
+        font-size: 1.25rem;
+    }
+    .card-main .card-header .icon-connection {
+        width: 50px;
+        height: 50px;
+    }
+    .card-main .card-header {
+        padding: 10px 20px;
+    }
+    .chat .msg-container {
+        font-size: 1rem;
+    }
+    .chat .msg-container .msg-date {
+        font-size: .75rem;
+    }
+    .card-account {
+        height: 320px;
+    }
+    .card-account .card-header {
+        padding: 5px 10px;
+    }
+    .card-account .list {
+        font-size: .85rem;
+    }
+    .card-account .avatar-wrap {
+        max-width: 180px;
+        flex: 0 0 180px;
+    }
+    .card-account .avatar-wrap img {
+        max-height: 180px;
+    }
+    .card-profiles .sidebar-body {
+        max-height: calc(100vh - 415px);
+    }
+
+}
+@media (max-width: 1679px) {
+    .form-control, .letter .message .ui-textarea, .letter .message .ui-textarea {
+        font-size: .75rem;
+    }
+    .card-profiles .sidebar-body {
+        max-height: calc(100vh - 385px);
+    }
+    .card-account {
+        height: 290px;
+    }
+    .card-account .avatar-wrap {
+        max-width: 120px;
+    }
+    .card-account .user-info {
+        max-height: 210px;
+    }
+    .card-account .list {
+        font-size: 0.725rem;
+    }
+    .card-account .avatar-wrap {
+        max-width: 120px;
+        flex: 0 0 120px;
+    }
+    .card-account .avatar-wrap img {
+        max-height: 120px;
+    }
+    .contacts .contact-item {
+        padding: 5px 10px;
+    }
+    .contacts .avatar-wrap, .card-main .avatar-wrap {
+        flex: 0 0 3.5rem;
+    }
+    .contacts .avatar {
+        width: 3.5rem;
+        height: 3.5rem;
+        line-height: 3.5rem;
+        font-size: 1rem;
+    }
+    .chat .msg-container {
+        font-size: .75rem;
+    }
+    .card-account .avatar-wrap .user-id,
+    .card-account .avatar-wrap .title,
+    .card-profiles .user-wrap .user-info {
+        font-size: .875rem;
+    }
+    .chat .msg-container .msg-date {
+        font-size: 0.625rem;
+    }
+    .emojies .list__item {
+        flex: 0 0 80px;
+    }
+    .emojies .list__item .box {
+        width: 80px;
+    }
+    .moods .list__item {
+        flex: 0 0 100px;
+    }
+    .moods .list__item .box {
+        width: 100px;
+    }
+    .moods .box img {
+        max-height: 100px;
+        max-width: 100px
+    }
+    .card-main .card-header {
+        padding: 5px 10px;
+    }
+    .card-main .card-header .user-info .name {
+        font-size: 1rem;
+    }
+    .card-main .card-header .icon-connection {
+        width: 40px;
+        height: 40px;
+    }
+    .status {
+        width: .75rem;
+        height: .75rem;
+    }
+}
+@media (max-width: 1319px) {
+    .card-profiles .sidebar-body {
+        max-height: calc(100vh - 355px);
+    }
+    .card-account {
+        height: 260px;
+    }
+    .card-account .list {
+        font-size: 0.625rem;
+    }
+
+    .card-account .user-info {
+        max-height: 190px;
+    }
+}
+
