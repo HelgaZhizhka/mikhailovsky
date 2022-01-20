@@ -1,37 +1,38 @@
 <template>
-        <aside class="app-sidebar left-app is-open">
+        <aside class="app-sidebar left-app" :class="{'is-open' : show}">
             <div class="side-tab-body resp-vtabs">
                 <div class="first-sidemenu">
                     <ul class="resp-tabs-list">
                         <li>
                             <router-link :to="{name: 'dashboard'}" exact-active-class="active">
                                 <span class="link">
-                                    <span class="slider-text">Admin Panel</span>
+                                    <span class="slider-text">Главная</span>
                                 </span>
                             </router-link>
                         </li>
                         <li>
                             <router-link :to="{name: 'first'}" exact-active-class="active">
                                 <span class="link">
-                                    <span class="slider-text">First</span>
+                                    <span class="slider-text">Статьи</span>
                                 </span>
                             </router-link>
                         </li>
                         <li>
                             <router-link :to="{name: 'second'}" exact-active-class="active">
                                 <span class="link">
-                                    <span class="slider-text">Second</span>
+                                    <span class="slider-text">Медиа</span>
                                 </span>
                             </router-link>
                         </li>
                     </ul>
                 </div>
             </div>
+            <div class="app-sidebar__overlay" @click.prevent="closeSidebar"></div>
         </aside>
 </template>
 <script>
 export default {
-    props:[],
+    props:['show'],
     created() {
         console.log('Left Side Bar component created.')
     },
@@ -39,7 +40,9 @@ export default {
 
     },
     methods: {
-
+        closeSidebar() {
+            this.$emit('close')
+        },
     }
 }
 </script>

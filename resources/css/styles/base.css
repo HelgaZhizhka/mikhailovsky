@@ -8,6 +8,7 @@
 }
 article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, section {
 	display: block;
+
 }
 *, *::before, *::after {
 	box-sizing: border-box;
@@ -179,7 +180,6 @@ sup {
 a {
 	text-decoration: none;
 	background-color: transparent;
-	-webkit-text-decoration-skip: objects;
 }
 a:hover {
 	text-decoration: underline;

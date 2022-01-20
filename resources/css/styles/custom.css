@@ -50,6 +50,20 @@ body *:hover::-webkit-scrollbar-thumb {
     width: 5px;
     height: 10px;
 }
-.heading {
-    font-size: 5rem;
+.resp-tabs-list li {
+    float: none;
+    display: block;
+}
+.resp-tabs-list li .link {
+    color: inherit;
+    display: block;
+    text-align: center;
+}
+.resp-tabs-list li .link .slider-text {
+    display: block;
+}
+.app-sidebar__toggle:before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: '\f0c9'
 }

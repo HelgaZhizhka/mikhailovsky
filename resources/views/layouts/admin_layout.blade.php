@@ -12,6 +12,7 @@
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/font-awesome-all.min.css">
     <!-- Styles -->
     <link href="{{ mix('assets/css/styles.css') }}" rel="stylesheet">
     <script src="{{ mix('js/manifest.js') }}" defer></script>

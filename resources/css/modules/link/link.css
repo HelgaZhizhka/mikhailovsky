@@ -6,7 +6,7 @@
 }
 a {
 	background-color: transparent;
-	-webkit-text-decoration-skip: objects;
+    text-decoration-skip-ink: auto;
 	color: var(--link-color);
 	&:hover {
 		color: var(--link-color-hover);

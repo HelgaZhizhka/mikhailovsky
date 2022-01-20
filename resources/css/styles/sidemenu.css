@@ -1,24 +1,12 @@
 
-.app-sidebar .mCSB_container {
-	margin-right: 0;
-}
-.app-sidebar .mCSB_draggerContainer {
-	right: -11px;
-}
-
-@media (min-width: 768px) {
-	.app.sidenav-toggled .app-sidebar__overlay {
-		visibility: hidden;
-	}
-}
 @media (max-width: 767px) {
-	.app {
+	/*.app {
 		overflow-x: hidden;
-	}
-	.app .app-sidebar:not(.is-open) {
+	}*/
+	.app-sidebar:not(.is-open) {
 		left: -300px;
 	}
-    .app .app-sidebar.is-open .app-sidebar__overlay {
+    .app-sidebar.is-open .app-sidebar__overlay {
         visibility: visible;
         background: rgba(0,0,0,.35);
     }
@@ -28,33 +16,10 @@
     .app .app-sidebar.is-open + .app-content .header {
         padding-left: 125px;
     }*/
-    .app .app-sidebar__overlay {
+    .app-sidebar__overlay {
 		visibility: hidden;
 	}
-	.app.sidenav-toggled1 .app-content {
-		margin-left: 0;
-	}
-	.app.sidenav-toggled1 .app-sidebar {
-		left: 0;
-	}
-	.app.sidenav-toggled1 .app-sidebar__overlay {
-		visibility: visible;
-	}
-	.app.sidebar-mini.sidenav-toggled.sidebar-gone .second-sidemenu{
-		visibility:hidden;
-	}
-	.app.sidebar-mini.sidebar-gone .second-sidemenu{
-		visibility:hidden;
-	}
-	.app.sidebar-mini.sidenav-toggled1.sidebar-gone .second-sidemenu{
-		visibility:hidden;
-	}
-	.app.sidebar-mini.sidebar-gone.sidenav-toggled1.sidenav-toggled4 .second-sidemenu{
-		visibility:visible !important;
-	}
 	.nav-link.nav-link.toggle {
-		-webkit-box-ordinal-group: 0;
-		-ms-flex-order: -1;
 		order: -1;
 	}
 	.app-header .header-brand {
@@ -69,12 +34,10 @@
 }
 .app-content {
 	min-height: calc(100vh - 50px);
-	margin-top: 0 !important;
+    padding: 20px;
+    margin-top: 50px;
 	margin-bottom: 0 !important;
-	-webkit-transition: margin-left 0.3s ease;
-	-o-transition: margin-left 0.3s ease;
 	transition: margin-left 0.3s ease;
-	padding: 0;
 	overflow: hidden;
 }
 .footer .container {
@@ -88,7 +51,7 @@
 	.app-content {
 		margin-left: 255px;
 	}
-	.app-content .container-fluid{
+	.app-content .container-fluid {
 		padding-right:30px;
 		padding-left:30px;
 	}
@@ -677,7 +640,7 @@
 .user-info .text-dark{
 	color:#dbdaea !important
 }
-@media (min-width:767px){
+@media (min-width:768px){
 
 	.sidenav-toggled .resp-vtabs ul.resp-tabs-list{
 		width:100%;
@@ -726,11 +689,12 @@
 }
 .first-sidemenu{
 	position:fixed;
-	width:125px;
+	width:230px;
 	background:#fff;
 	height:100%;
 	z-index:10;
-	padding-bottom:122px;
+	padding-bottom:30px;
+    overflow-y: auto;
 }
 .second-sidemenu{
 	position:fixed;

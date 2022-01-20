@@ -25,11 +25,19 @@ const admin = new Vue({
 
     data: function () {
         return {
-
+            showSidebar: false
         }
     },
 
     created(){
         console.log('created from admin.js')
     },
+    methods: {
+        openSidebar() {
+            this.showSidebar = true
+        },
+        closeSidebar() {
+            this.showSidebar = false
+        },
+    }
 })
