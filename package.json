@@ -32,6 +32,7 @@
         "workbox-webpack-plugin": "6.0.2"
     },
     "dependencies": {
+        "popper.js": "^1.16.1",
         "save-dev": "0.0.1-security",
         "vue-mq": "1.0.1",
         "vue-router": "3.5.1"

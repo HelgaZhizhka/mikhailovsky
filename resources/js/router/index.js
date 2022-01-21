@@ -2,8 +2,8 @@ import VueRouter from "vue-router"
 import Landing from "../components/Landing";
 import About from "../components/About";
 import Dashboard from "../admin/Dashboard";
-import First from "../admin/First";
-import Second from "../admin/Second";
+import Articles from "../admin/Articles";
+import Medias from "../admin/Medias";
 
 
 const routes = [
@@ -23,14 +23,14 @@ const routes = [
         name: "dashboard"
     },
     {
-        path: '/admin/first',
-        component: First,
-        name: "first"
+        path: '/admin/articles',
+        component: Articles,
+        name: "articles"
     },
     {
-        path: '/admin/second',
-        component: Second,
-        name: "second"
+        path: '/admin/medias',
+        component: Medias,
+        name: "medias"
     },
 ]
 
