@@ -4,6 +4,7 @@ import About from "../components/About";
 import Dashboard from "../admin/Dashboard";
 import Articles from "../admin/Articles";
 import Medias from "../admin/Medias";
+import Settings from "../admin/Settings";
 
 
 const routes = [
@@ -31,6 +32,11 @@ const routes = [
         path: '/admin/medias',
         component: Medias,
         name: "medias"
+    },
+    {
+        path: '/admin/settings',
+        component: Settings,
+        name: "settings"
     },
 ]
 

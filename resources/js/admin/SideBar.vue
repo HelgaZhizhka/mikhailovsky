@@ -24,6 +24,13 @@
                                 </span>
                             </router-link>
                         </li>
+                        <li>
+                            <router-link :to="{name: 'settings'}" exact-active-class="active">
+                                <span class="link">
+                                    <span class="slider-text">Настройки</span>
+                                </span>
+                            </router-link>
+                        </li>
                     </ul>
                 </div>
             </div>

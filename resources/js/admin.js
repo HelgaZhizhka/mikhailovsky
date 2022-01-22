@@ -25,14 +25,24 @@ const admin = new Vue({
 
     data: function () {
         return {
-            showSidebar: false
+            showSidebar: false,
+            currentAdmin: null,
         }
     },
 
     created(){
         console.log('created from admin.js')
+        this.initAdminPanel();
     },
     methods: {
+        initAdminPanel(){
+            axios.get('/admin/init-admin').then(response=>{
+                if (response.data.status === 'ok'){
+                    console.log('init successful')
+                    this.currentAdmin = response.data.currentAdmin;
+                }
+            });
+        },
         openSidebar() {
             this.showSidebar = true
         },

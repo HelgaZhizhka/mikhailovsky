@@ -24,6 +24,9 @@ Auth::routes();
 //admin routes
 Route::group(['prefix'=>'admin', 'middleware'=>['auth']], function (){
     Route::get('/', 'Admin\AdminController@index');
-    Route::get('/{link}', 'Admin\AdminController@index')->where('link', ('articles|medias'));
-
+    Route::get('/{link}', 'Admin\AdminController@index')->where('link', ('articles|medias|settings'));
+    Route::post('/create-new-admin-account', 'Admin\AdminController@createNewAdminAccount');
+    Route::post('/delete-admin-account', 'Admin\AdminController@deleteAdminAccount');
+    Route::get('/init-admin', 'Admin\AdminController@initAdminPanel');
+    Route::get('/init-settings', 'Admin\AdminController@initSettings');
 });
