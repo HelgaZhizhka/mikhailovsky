@@ -18,7 +18,7 @@
 
 <script>
 export default {
-    name: "Second"
+    name: "Medias"
 }
 </script>
 

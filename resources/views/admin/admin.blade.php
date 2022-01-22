@@ -15,7 +15,7 @@
                     @close="closeSidebar"></side-bar>
                 <!-- Sidebar menu end-->
                 <!-- CONTAINER -->
-                <router-view></router-view>
+                <router-view :current-admin="currentAdmin"></router-view>
                 <!-- CONTAINER end-->
             </div>
         </div>

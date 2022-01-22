@@ -38,6 +38,7 @@
 <script>
 export default {
     name: "Dashboard",
+    props: ['currentAdmin'],
     created() {
         console.log('created from Dashboard.vue')
     }

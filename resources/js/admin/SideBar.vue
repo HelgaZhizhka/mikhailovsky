@@ -11,16 +11,23 @@
                             </router-link>
                         </li>
                         <li>
-                            <router-link :to="{name: 'first'}" exact-active-class="active">
+                            <router-link :to="{name: 'articles'}" exact-active-class="active">
                                 <span class="link">
                                     <span class="slider-text">Статьи</span>
                                 </span>
                             </router-link>
                         </li>
                         <li>
-                            <router-link :to="{name: 'second'}" exact-active-class="active">
+                            <router-link :to="{name: 'medias'}" exact-active-class="active">
                                 <span class="link">
                                     <span class="slider-text">Медиа</span>
+                                </span>
+                            </router-link>
+                        </li>
+                        <li>
+                            <router-link :to="{name: 'settings'}" exact-active-class="active">
+                                <span class="link">
+                                    <span class="slider-text">Настройки</span>
                                 </span>
                             </router-link>
                         </li>
