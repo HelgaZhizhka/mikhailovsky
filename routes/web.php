@@ -29,4 +29,5 @@ Route::group(['prefix'=>'admin', 'middleware'=>['auth']], function (){
     Route::post('/delete-admin-account', 'Admin\AdminController@deleteAdminAccount');
     Route::get('/init-admin', 'Admin\AdminController@initAdminPanel');
     Route::get('/init-settings', 'Admin\AdminController@initSettings');
+    Route::get('/get-articles', 'Admin\AdminController@getArticles');
 });

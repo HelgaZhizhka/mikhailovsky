@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Admin;
 
+use App\Article;
 use App\Http\Controllers\Controller;
 use App\User;
 use Illuminate\Http\Request;
@@ -61,5 +62,10 @@ class AdminController extends Controller
         }else{
             return ['status'=>'false'];
         }
+    }
+    public function getArticles(){
+        Log::info('getArticles');
+        $articles = Article::all();
+        return ['status'=>'ok', 'articles'=>$articles];
     }
 }
