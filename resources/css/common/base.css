@@ -1,43 +1,41 @@
 :root {
 	--color-white: #fff;
     --color-black: #000;
-	--color-blue: #0074d9;
-    --color-yellow: #ffb609;
-    --color-red: #ff4136;
-    --color-green: #2ecc40;
-    --base-pink: #F44A9C;
-    --base-gold: #BE9E56;
-    --base-silver: #89899C;
-    --base-blue: #707EFD;
-    --base-darkblue: #8962F8;
-    --base-teal: #09D0DD;
-    --base-green: #00D3B9;
-    --base-orange: #F4714D;
-    --base-red: #DD3960;
+	--color-blue: #2D9CDB;
+    --color-orange: #F2994A;
+    --color-red: #EB5757;
+    --color-green: #27AE60;
+    --base-gold: #E3B940;
+    --base-blue: #308BB5;
+    --base-blue-base: #1C30AE;
+    --base-darkblue: #0D1651;
+    --grey: #333;
+    --grey-dark: #212121;
+    --grey-light: #fafafa;
+    --silver: #ccc;
 
-	--grey-darker:  hsl(0, 0%, 21%);
-	--grey-dark: hsl(0, 0%, 29%);
-	--grey: hsl(0, 0%, 48%);
-	--grey-light:   hsl(0, 0%, 71%);
-	--grey-lighter: hsl(0, 0%, 86%);
 
-	--state-primary: var(--base-pink);
+	--state-primary: var(--base-darkblue);
 	--state-secondary: var(--base-gold);
-	--state-success: #23d160;
-	--state-info: #209cee;
-	--state-warning: #FF8754;
-	--state-danger: #ff3860;
+	--state-success: var(--color-green);
+	--state-info: var(--color-blue);
+	--state-warning: var(--color-orange);
+	--state-danger: var(--color-red);
 	--state-light: var(--color-white);
 	--state-dark: var(--color-black);
 
-	--body-bg-color: #F6F6F6;
-	--color-text:  #1A1A1A;
-	--color-muted: var(--grey);
-	--border-radius: 3px;
+	--body-bg-color: var(--color-white);
+	--color-text:  var(--grey);
+	--color-muted: var(--silver);
+	--border-radius: 4px;
 	--base-unit: 1.5rem;
 
-	--component-bg-color: #f2f2f2;
-	--component-border-color: #dbdbdb;
+    --gradient-down: linear-gradient(180deg, #0D1651 0%, rgba(13, 22, 81, 0) 100%);
+    --gradient-up: linear-gradient(180deg, rgba(13, 22, 81, 0) 0%, #0D1651 100%);
+
+
+	--component-bg-color: var(--grey-dark);
+	--component-border-color:  var(--silver);
 	--component-border-radius: var(--border-radius);
 	--component-border-width: 1px;
 	--component-focus-width: 2px;
@@ -47,7 +45,8 @@
 	--component-box-shadow-inner: inset 0 1px 1px rgba(0, 0, 0, .05);
 	--component-box-shadow-outer: 0 1px 0 rgba(0, 0, 0, .05);
 	--component-box-shadow-box: 0 2px 3px rgba(10,10,10,.1), 0 0 0 1px rgba(10,10,10,.1);
-	--spacing-xs: .5rem;
+	--text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+    --spacing-xs: .5rem;
 	--spacing-sm: 1rem;
 	--spacing-md: 1.5rem;
 	--spacing-lg: 2rem;

@@ -12,8 +12,8 @@
 	--line-height: 1.5;
 
 	--font-family: var(--font-family-base);
-	--font-family-base: 'Roboto', sans-serif;
-	--font-family-head: 'Roboto', sans-serif;
+	--font-family-base: 'PT Sans', sans-serif;
+	--font-family-head: 'PT Sans Narrow', sans-serif;
 	--font-sans-serif: sans-serif;
 	--font-serif: serif;
 	--font-system: system-ui;
@@ -39,7 +39,7 @@
 	--kbd-padding-y: calc(var(--font-size) * .2);
 
 	--mark-color: inherit;
-	--mark-bg-color: var(--color-yellow);
+	--mark-bg-color: var(--color-orange);
 	--mark-padding-x: calc(var(--font-size) * .4);
 	--mark-padding-y: calc(var(--font-size) * .2);
 
@@ -48,8 +48,8 @@
 	--pre-bg-color: var(--code-bg-color);
 	--pre-max-height: none;
 
-	--selection-color: var(--color-white);
-	--selection-bg-color: var(--color-text);
+	--selection-color: var(--color-blue);
+	--selection-bg-color: var(--color-white);
 
 }
 

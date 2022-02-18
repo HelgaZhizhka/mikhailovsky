@@ -20,10 +20,14 @@ const app = new Vue({
 
     data: function () {
         return {
-
+            url: '',
+            cdnUrl: ''
         }
     },
     created(){
         console.log('created from app.js')
+        this.myUrl = window.myUrl
+        this.cdnUrl = window.cdnUrl
+        this.version = window.version
     }
 })

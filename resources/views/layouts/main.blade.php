@@ -13,12 +13,20 @@
     <title>Свято-Архангело-Михайловский женский монастырь</title>
     <meta name="description" content="Свято-Архангело-Михайловский женский монастырь">
     <meta name="keywords" content="Свято-Архангело-Михайловский женский монастырь">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/stylesheet.css">
     <link rel="stylesheet" href="{{ mix('assets/css/app.css') }}">
     <script src="{{ mix('js/manifest.js') }}" defer></script>
     <script src="{{ mix('js/vendor.js') }}" defer></script>
     <script src="{{ mix('js/app.js') }}" defer></script>
+    <script>
+        window.myUrl = {!! json_encode(config('app.url')) !!};
+        {{--window.cdnUrl = {!! json_encode(config('app.cdn_url')) !!};--}}
+        window.version = {!! json_encode(config('app.version')) !!};
+        window.environment = {!! json_encode(config('app.env')) !!};
+    </script>
 </head>
 <body>
     @yield('content')
