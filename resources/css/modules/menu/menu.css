@@ -1,3 +1,40 @@
 .menu {
 	@extend .list;
+    &_sidebar {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 50px;
+        background: rgba(13, 22, 81, .6);
+        box-shadow: 0 20px 20px rgba(0, 0, 0, .1);
+        border-radius: 0 0 10px 10px;
+    }
+    &_sub {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        padding: 34px 10px 14px;
+        background: linear-gradient(180deg, rgba(13, 22, 81, 0) 0%, rgba(13, 22, 81, 0.8) 72.76%);
+        border-radius: 0 0 4px 4px;
+        min-width: 260px;
+        visibility: hidden;
+        pointer-events: none;
+        opacity: 0;
+        transition: .25s all ease;
+        .menu__item {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .menu__link {
+            font-size: 1.125rem;
+            line-height: 1.27;
+            color: #fff;
+            white-space: nowrap;
+            text-decoration: none;
+            &:hover {
+                opacity: .85;
+                text-decoration: underline;
+            }
+        }
+    }
 }

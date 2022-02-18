@@ -1,0 +1,95 @@
+.section {
+    &_intro {
+        position: relative;
+        min-height: 100vh;
+        background: #0d1651;
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 90;
+            background: linear-gradient(180deg, rgba(33, 33, 33, 0) 0%, rgba(33, 33, 33, 0.6) 100%);
+        }
+        .video_responsive {
+            z-index: 80;
+        }
+        .section__caption {
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            color: #fff;
+            z-index: 100;
+            .promo {
+                margin: auto;
+                &__title, &__subtitle, &__text {
+                    color: #fff;
+                    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+                }
+                &__title {
+                    font-size: 2rem;
+                    font-family: 'ancient_kyivnormal';
+                }
+                &__subtitle {
+                    font-size: 1.5rem;
+                }
+            }
+            .btn_scroll {
+                position: absolute;
+                left: 50%;
+                bottom: 30px;
+            }
+        }
+    }
+
+}
+@media (--breakpoint-xl-up) {
+    .section {
+        &_bg {
+            position: relative;
+            overflow-x: hidden;
+            min-height: 600px;
+            &::after {
+                content: '';
+                position: absolute;
+            }
+        }
+        &_news {
+            &::after {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                width: 1190px;
+                height: 941px;
+                background-image: url(../images/fon1.png);
+            }
+        }
+    }
+}
+@media (--breakpoint-2xl-up) {
+    .section {
+        &_intro {
+            .section__caption {
+                .promo {
+                    &__title {
+                        font-size: 4rem;
+                    }
+                    &__subtitle {
+                        font-size: 1.5rem;
+                    }
+                    &__text {
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+        }
+    }
+}

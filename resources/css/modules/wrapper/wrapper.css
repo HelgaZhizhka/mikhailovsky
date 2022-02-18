@@ -4,6 +4,7 @@
 	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
+    background-color: var(--body-bg-color);
 	.page {
 		flex: 1 0 auto;
 	}
@@ -12,3 +13,8 @@
 	}
 }
 
+@media (--breakpoint-xl-up) {
+    .wrapper {
+        background-image: url(../images/bg.jpg);
+    }
+}

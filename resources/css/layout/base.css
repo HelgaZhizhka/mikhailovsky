@@ -2,10 +2,10 @@
 	--container-max-width-sm: none;
 	--container-max-width-md: none;
 	--container-max-width-lg: none;
-	--container-max-width-xl: 1260px;
-    --container-max-width-2xl: 1410px;
-    --container-max-width-3xl: 1635px;
-	--grid-gutter-width: 2rem;
+	--container-max-width-xl: 1256px;
+    --container-max-width-2xl: 1656px;
+    --container-max-width-3xl: 1896px;
+	--grid-gutter-width: 24px;
 }
 
 @custom-media --breakpoint-xs-up only screen and (min-width: 0);
@@ -13,17 +13,17 @@
 @custom-media --breakpoint-md-up only screen and (min-width: 768px);
 @custom-media --breakpoint-lg-up only screen and (min-width: 992px);
 @custom-media --breakpoint-xl-up only screen and (min-width: 1280px);
-@custom-media --breakpoint-2xl-up only screen and (min-width : 1440px);
-@custom-media --breakpoint-3xl-up only screen and (min-width : 1680px);
-@custom-media --breakpoint-4xl-up only screen and (min-width : 2000px);
-@custom-media --breakpoint-5xl-up only screen and (min-width : 2800px);
+@custom-media --breakpoint-2xl-up only screen and (min-width : 1680px);
+@custom-media --breakpoint-3xl-up only screen and (min-width : 1920px);
+@custom-media --breakpoint-4xl-up only screen and (min-width : 2560px);
+@custom-media --breakpoint-5xl-up only screen and (min-width : 3440px);
 @custom-media --breakpoint-6xl-up only screen and (min-width : 3840px);
 
 @custom-media --breakpoint-xs-down only screen and (max-width: 575px);
 @custom-media --breakpoint-sm-down only screen and (max-width: 767px);
 @custom-media --breakpoint-md-down only screen and (max-width: 991px);
 @custom-media --breakpoint-lg-down only screen and (max-width: 1279px);
-@custom-media --breakpoint-2xl-down only screen and (max-width: 1439px);
+@custom-media --breakpoint-2xl-down only screen and (max-width: 1679px);
 @custom-media --breakpoint-xl-down only screen and (min-width: 0);
 
 @custom-media --breakpoint-xs-only only screen and (min-width: 0) and (max-width: 575px);
