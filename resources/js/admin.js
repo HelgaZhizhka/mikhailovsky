@@ -5,6 +5,13 @@ import router from "./router"
 import VueMq from 'vue-mq';
 import AdminHeader from "./admin/AdminHeader";
 import SideBar from "./admin/SideBar";
+
+Object.defineProperty(Vue.prototype,"$bus",{
+    get: function() {
+        return this.$root.bus;
+    }
+});
+
 Vue
     .use(VueRouter)
     .use(VueMq, {
@@ -25,6 +32,7 @@ const admin = new Vue({
 
     data: function () {
         return {
+            bus: new Vue({}),
             showSidebar: false,
             currentAdmin: null,
         }

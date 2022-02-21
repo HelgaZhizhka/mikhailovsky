@@ -26,7 +26,12 @@ Route::group(['prefix'=>'admin', 'middleware'=>['auth']], function (){
     Route::get('/', 'Admin\AdminController@index');
     Route::get('/{link}', 'Admin\AdminController@index')->where('link', ('articles|medias|settings'));
     Route::post('/create-new-admin-account', 'Admin\AdminController@createNewAdminAccount');
+    Route::post('/create-new-article', 'Admin\AdminController@createNewArticle');
+    Route::post('/upload-photo', 'Admin\AdminController@uploadPhoto');
+    Route::post('/delete-article', 'Admin\AdminController@deleteArticle');
+    Route::post('/delete-poster', 'Admin\AdminController@deletePoster');
     Route::post('/delete-admin-account', 'Admin\AdminController@deleteAdminAccount');
+    Route::post('/change-is-presentation-poster', 'Admin\AdminController@changePresentationPoster');
     Route::get('/init-admin', 'Admin\AdminController@initAdminPanel');
     Route::get('/init-settings', 'Admin\AdminController@initSettings');
     Route::get('/get-articles', 'Admin\AdminController@getArticles');

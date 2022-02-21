@@ -15,7 +15,7 @@
                     @close="closeSidebar"></side-bar>
                 <!-- Sidebar menu end-->
                 <!-- CONTAINER -->
-                <router-view :current-admin="currentAdmin"></router-view>
+                <router-view :current-admin="currentAdmin" url="{{$url}}"></router-view>
                 <!-- CONTAINER end-->
             </div>
         </div>
